@@ -4,9 +4,13 @@
 <div class="row ">
 
     <div class="col-12 col-sm-6 col-md-8 quotes" >
-            
-                <ul *ngFor="let item of quotes; let i = index"  class="innerContainer" >
-                    <li>{{item.quote}}</li>
+
+                <ul *ngFor="let item of quotes; let i = index"  class="innerContainer"  >
+
+
+                    <li class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}} <i class="fas fa-quote-right"></i></li>
+
+                   
              
                     <button (click) ="toggleDetails(i)">Qoute Details</button>
             
