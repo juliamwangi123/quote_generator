@@ -1,5 +1,11 @@
-<div class="display">
-    <ul *ngFor="let item of quotes; let i = index" class="quote" class='one {{(item[i].upCounter> ? "highlight" : " ")}}' >
+
+    <h1>Quotes</h1>
+
+<div class="row no-gutters">
+
+    <div class="col-12 col-sm-6 col-md-8">
+
+        <ul *ngFor="let item of quotes; let i = index"   >
         <li>{{item.quote}}</li>
  
         <button (click) ="toggleDetails(i)">Qoute Details</button>
@@ -18,7 +24,12 @@
 
     <div  ></div>
 
-    </ul>
-</div>
-<app-forms (customQuote)="customQuote($event)" ></app-forms>
+    </ul></div>
+    <div class="col-6 col-md-4">
+        <app-forms (customQuote)="customQuote($event)" ></app-forms>
+
+    </div>
+  </div>
+   
+  
 

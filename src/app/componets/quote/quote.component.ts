@@ -12,8 +12,8 @@ export class QuoteComponent implements OnInit {
 
   //counter to be dispalayed  by the child component
 
-  // public upCounter: number =0 ;
-  // public downCounter:number =0;
+  
+  
 
   constructor() { }
 
@@ -45,8 +45,8 @@ export class QuoteComponent implements OnInit {
   }
 //
   customQuote(quote){
-    // let quoteLength = this.quotes.length;
-    // quote.id = quoteLength+1;
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
     this.quotes.push(quote)
   }
 
