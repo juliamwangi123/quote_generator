@@ -1,11 +1,10 @@
-/* .display{
-    background-color: aqua;
+.heading{
+    color: #006D77 !important;
+    font-weight: 900;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
 }
-.quote{
-    background-color: yellow;
-    width: 30%;
-    height: 89%;
-} */
 
 .highlight{
     background-color: red;
