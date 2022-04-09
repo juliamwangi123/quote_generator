@@ -1,0 +1,61 @@
+import { Component, OnInit } from '@angular/core';
+import{Quotes} from '../../model/quotes' //import the quote class
+
+@Component({
+  selector: 'app-quote',
+  templateUrl: './quote.component.html',
+  styleUrls: ['./quote.component.css']
+})
+export class QuoteComponent implements OnInit {
+//create an ampty array from the Quote class
+  quotes:Quotes[] =[];
+
+  //counter to be dispalayed  by the child component
+
+  // public upCounter: number =0 ;
+  // public downCounter:number =0;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.quotes =[
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0 ),
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0)
+    ]
+  }
+
+
+  public max = this.quotes[0]
+
+
+ upVote(id){
+  this.quotes[id].upCounter++
+ }
+
+
+
+
+  //button to toggle the quote details
+
+  toggleDetails(id){
+    this.quotes[id].showDetails =! this.quotes[id].showDetails
+
+
+
+  }
+//
+  customQuote(quote){
+    // let quoteLength = this.quotes.length;
+    // quote.id = quoteLength+1;
+    this.quotes.push(quote)
+  }
+
+  deleteQuote(id){
+    this.quotes= this.quotes.filter((element, index)=>{
+         return id !==index
+     })
+  }
+
+
+
+}

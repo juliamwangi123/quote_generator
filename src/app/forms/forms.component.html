@@ -1,0 +1,10 @@
+<form   (ngSubmit)=" sendQouteToParent()" #quoteForm="ngForm">
+    <input type="text" name="publisher"    [(ngModel)]="newquote.publisher"> publisher <br> <br> 
+    <!-- <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger"> -->
+        <p>Name is required</p>
+    <!-- </div> -->
+    <textarea name="quote" id="" cols="30" rows="10"  #quote="ngModel" [(ngModel)]="newquote.quote"></textarea> <br> <br> 
+    <input type="text" name="author" id="" [(ngModel)]="newquote.author"> author  <br> <br> 
+    <input type="submit" value="add Quote">
+
+</form>
