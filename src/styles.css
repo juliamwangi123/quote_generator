@@ -4,9 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.mainContainer{
-    height: 100vh;
-    background-color: black;
-    overflow: hidden;
+
+body{
+    /* height: 1500vh; */
     background-image: linear-gradient(to right bottom, #83c5be, #edf6f9);
+
 }

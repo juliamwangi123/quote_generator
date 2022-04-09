@@ -1,0 +1,13 @@
+.author::before{
+    content: "_";
+}
+
+.author{
+    text-align: center;
+    font-size: 18px;
+}
+
+.quotedetails{
+    text-align: center;
+    margin-top: 5px;
+}
