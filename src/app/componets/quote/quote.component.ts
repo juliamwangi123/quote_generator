@@ -7,6 +7,8 @@ import{Quotes} from '../../model/quotes' //import the quote class
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+
+  toDisplay = true;
 //create an ampty array from the Quote class
   quotes:Quotes[] =[];
 
@@ -39,14 +41,12 @@ downVote(id){
 
 
 
-  //button to toggle the quote details
+  //button to toggle the quote details to show and hide form
 
-  toggleDetails(id){
-    this.quotes[id].showDetails =! this.quotes[id].showDetails
-
+  
 
 
-  }
+  
 //
   customQuote(quote){
     let quoteLength = this.quotes.length;
@@ -60,6 +60,8 @@ downVote(id){
      })
   }
 
-
+ toggleShow(){
+   this.toDisplay =!this.toDisplay
+ }
 
 }
