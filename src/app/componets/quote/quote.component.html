@@ -1,35 +1,41 @@
 
-    <h1>Quotes</h1>
+    <h1 class="heading" >Quotes</h1>
+<div class="container-fluid main">
+<div class="row ">
 
-<div class="row no-gutters">
+    <div class="col-12 col-sm-6 col-md-8 quotes" >
+            
+                <ul *ngFor="let item of quotes; let i = index"  class="innerContainer" >
+                    <li>{{item.quote}}</li>
+             
+                    <button (click) ="toggleDetails(i)">Qoute Details</button>
+            
+                    <!-- child component  -->
+                    <app-quotedetails 
+                        *ngIf="item.showDetails"  [parentData] = "item"
+            
+                     
+                   >
+            
+                    </app-quotedetails>
+                <button (click) ="deleteQuote(i)">Delete</button>
+                <button (click) =" upVote(i)">up</button>
+                {{item.upCounter}}
+            
+                <div  ></div>
+            
+                </ul>
+            
+       </div>
 
-    <div class="col-12 col-sm-6 col-md-8">
-
-        <ul *ngFor="let item of quotes; let i = index"   >
-        <li>{{item.quote}}</li>
- 
-        <button (click) ="toggleDetails(i)">Qoute Details</button>
-
-        <!-- child component  -->
-        <app-quotedetails 
-            *ngIf="item.showDetails"  [parentData] = "item"
-
-         
-       >
-
-        </app-quotedetails>
-    <button (click) ="deleteQuote(i)">Delete</button>
-    <button (click) =" upVote(i)">up</button>
-    {{item.upCounter}}
-
-    <div  ></div>
-
-    </ul></div>
     <div class="col-6 col-md-4">
-        <app-forms (customQuote)="customQuote($event)" ></app-forms>
+    <app-forms (customQuote)="customQuote($event)" ></app-forms>
 
-    </div>
+</div>
   </div>
+
+  
+</div>
    
   
 

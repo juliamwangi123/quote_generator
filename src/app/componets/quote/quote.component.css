@@ -11,3 +11,34 @@
     background-color: red;
     color:burlywood
 }
+
+.quotes{
+    background-color: aqua;
+    /* height: 10%;
+    width: 20%; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main{
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.row{
+    height: 100%;
+
+}
+
+.innerContainer{
+    height: 40%;
+    background-color: red;
+    width: 30%;
+    margin: 5px;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+}
