@@ -27,8 +27,8 @@
                 
             
                     <div class="votes">
-                        {{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i>
-                       <p> {{item.downCounter}}<i class="bi bi-hand-thumbs-down"></i></p>
+                        <p>{{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i></p>
+                        {{item.downCounter}}<i class="bi bi-hand-thumbs-down" (click)="downVote(i)"></i>
                        </div>
             
                 </ul>

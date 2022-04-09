@@ -26,12 +26,16 @@ export class QuoteComponent implements OnInit {
 
 
 
-
+//upvote
  upVote(id){
  this.quotes[id].upCounter++
 
  }
+//downvote
 
+downVote(id){
+  this.quotes[id].downCounter--
+}
 
 
 
