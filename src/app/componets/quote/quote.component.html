@@ -1,9 +1,9 @@
 
     <h1 class="heading" >Quotes</h1>
 <div class="container-fluid main">
+<div class="row">
 
-
-    <div class=" col-md-12 quotes" >
+    <div class=" col-12  col-sm -8 col-md-8 quotes" >
         <!-- <div class="innerContainer"> -->
 
                 <ul *ngFor="let item of quotes; let i = index"  class="col-4  innerContainer ">
@@ -43,13 +43,14 @@
 
    
        </div>
-       <button (click)= "toggleShow()">create quote</button>
 
        <div class="col-6 col-md-6" class="form" *ngIf="toDisplay">
         <app-forms (customQuote)="customQuote($event)" ></app-forms>
     
     </div>
-   
+</div>
+          <button type="button" class="btn btn-primary btn-lg" (click)= "toggleShow()" class="generate">Genarate Quote</button>
+
 </div>
 
   

@@ -74,12 +74,21 @@ li{
     border:none
 }
 
-.form{
+/* .form{
     width: 50%;
     border: 2px solid silver;
     background-color:rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);
     position: relative;
     left: 30%;
+} */
+
+.generate{
+    background-color:rgb(131, 197, 190);
+    padding: 10px;
+    margin-bottom: 170px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 25px;
 }
 

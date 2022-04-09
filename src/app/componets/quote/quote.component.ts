@@ -8,7 +8,7 @@ import{Quotes} from '../../model/quotes' //import the quote class
 })
 export class QuoteComponent implements OnInit {
 
-  toDisplay = true;
+  toDisplay = false;
 //create an ampty array from the Quote class
   quotes:Quotes[] =[];
 
