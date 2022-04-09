@@ -27,10 +27,17 @@
                 
             
                     <div class="votes">
-                        <p>{{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i></p>
+                        <div class="one">
+                            <p>{{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i></p>
                         {{item.downCounter}}<i class="bi bi-hand-thumbs-down" (click)="downVote(i)"></i>
+                        </div>
+                        <div class="two">
+                            <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
+                        </div>
                        </div>
-            
+                      
+
+                       
                 </ul>
             <!-- </div> -->
 
