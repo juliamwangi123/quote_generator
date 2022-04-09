@@ -19,17 +19,11 @@ export class QuotedetailsComponent implements OnInit {
   // @Input () counterData;  //property  upvote
   // @Input () decreaseCounter;
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
-
-
-  // increaseCounter(){
-  //   this.quotes.counterData
-  // }
-
-  // decreaseCount(){
-  // Math.abs( this.decreaseCounter--)
-  // }
+  
 }

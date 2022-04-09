@@ -19,17 +19,17 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.quotes =[
-      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0 ),
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ),
       new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0)
     ]
   }
 
 
-  public max = this.quotes[0]
 
 
  upVote(id){
-  this.quotes[id].upCounter++
+ this.quotes[id].upCounter++
+
  }
 
 
