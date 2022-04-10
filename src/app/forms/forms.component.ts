@@ -12,7 +12,7 @@ export class FormsComponent implements OnInit {
 
   //create a new quote object from the quote class
 
-  newquote = new Quotes("", "", "",0, 0);
+  newquote = new Quotes("", "", "",0, 0,new Date());
 // sending this to the parent component  1.import output & eventEmiiter  
 //2.create an output from the  inbuilt evetEmitter
   @Output() customQuote = new EventEmitter<Quotes>() //dont quite get this
@@ -25,7 +25,8 @@ export class FormsComponent implements OnInit {
   //3.a method that is sent with the data to the parent component
 
   sendQouteToParent(){
-    this.customQuote.emit(this.newquote)
+    this.customQuote.emit(this.newquote);
+    this.newquote=new Quotes("", "", "",0, 0,new Date());
   }
   showForm(){
     this.displayForm =!this.displayForm

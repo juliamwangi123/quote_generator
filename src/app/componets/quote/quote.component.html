@@ -14,8 +14,8 @@
                  
                 
                 
-                        <li   class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}} <br> <i class="fas fa-quote-right"></i></li>
-                    
+                        <li   class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}}  <br> <i class="fas fa-quote-right"></i></li>
+                       
                     <app-quotedetails 
                          [parentData] = "item">
                 
@@ -36,7 +36,9 @@
                             <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
                         </div>
                        </div>
-                      
+                       {{item.datePosted}}
+                                              
+
 
                        
                 </ul>
