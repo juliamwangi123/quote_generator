@@ -7,6 +7,7 @@ import { QuoteComponent } from './componets/quote/quote.component';
 import { QuotedetailsComponent } from './quotedetails/quotedetails.component';
 import { FormsComponent } from './forms/forms.component';
 import { HighestUpvoteDirective } from './highest-upvote.directive';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HighestUpvoteDirective } from './highest-upvote.directive';
     QuotedetailsComponent,
     FormsComponent,
     HighestUpvoteDirective,
+    DatePipe,
   ],
   imports: [
     BrowserModule,
