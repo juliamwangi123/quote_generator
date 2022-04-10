@@ -64,4 +64,6 @@ downVote(id){
    this.toDisplay =!this.toDisplay
  }
 
+ 
+
 }

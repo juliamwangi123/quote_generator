@@ -8,6 +8,7 @@ import{Quotes} from '../model/quotes'
 })
 export class FormsComponent implements OnInit {
 
+  displayForm :boolean= false;
 
   //create a new quote object from the quote class
 
@@ -26,5 +27,11 @@ export class FormsComponent implements OnInit {
   sendQouteToParent(){
     this.customQuote.emit(this.newquote)
   }
-
+  showForm(){
+    this.displayForm =!this.displayForm
+    console.log(9);
+    
+    
+    
+  }
 }

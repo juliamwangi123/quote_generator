@@ -7,17 +7,17 @@
     <div class=" col-12  col-sm -8 col-md-8 quotes" >
         <!-- <div class="innerContainer"> -->
 
-                <ul *ngFor="let item of quotes; let i = index"  class="col-4  innerContainer ">
-                        <li class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}} <br> <i class="fas fa-quote-right"></i></li>
-                        <app-quotedetails 
-                         [parentData] = "item">
-
-            
-                     
+                <ul   *ngFor="let item of quotes; let i = index"  class="col-4 innerContainer"  >
                    
-                    <button (click) ="deleteQuote(i)">Delete</button>
-                <!-- <button (click) =" upVote(i)">up</button> -->
-                <!-- {{item.upCounter}} -->
+                
+
+                 
+                
+                
+                        <li   class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}} <br> <i class="fas fa-quote-right"></i></li>
+                    
+                    <app-quotedetails 
+                         [parentData] = "item">
                 
                     </app-quotedetails>
 
