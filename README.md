@@ -3,11 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.Its a website that allow usders to post quotes , author, name of the user and shows the date when the quote got  posted  and also allows the user to delete the quote
 
 ## Installation.
-$ Fork the repository from my git hub.
-$ Clone this repository to a location in your file system.
-$ Open terminal command line then navigate to the root folder of the application.
-$ Run `ng serve` for a dev server and navigate to the local host.
-$ Clickon the live link http://juliamwangi123.github.io/quote_generator/
+1. Fork the repository from my git hub.
+2. Clone this repository to a location in your file system.
+3. Open terminal command line then navigate to the root folder of the application.
+4. Run `ng serve` for a dev server and navigate to the local host.
+5. Clickon the live link http://juliamwangi123.github.io/quote_generator/
 
 ### Behavior Driven Development
 
