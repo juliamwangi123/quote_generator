@@ -6,16 +6,23 @@
 
     <div class=" col-12  col-sm -8 col-md-8 quotes" >
         <!-- <div class="innerContainer"> -->
-
                 <ul   *ngFor="let item of quotes; let i = index"  class="col-4 innerContainer"  >
                    
                 
+                                    <div  *ngIf="item.upCounter ==highest; then highVote; else lowVotes"  >
 
-                 
+                                    </div>
+
+                                    <ng-template #highVote>
+                                        <li   class="display-quote" appHighestUpvote><i class="fas fa-quote-left"></i>   {{item.quote}}  <br> <i class="fas fa-quote-right"></i></li>
+
+                                    </ng-template>
+                                    <ng-template #lowVotes>
+                                        <li   class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}}  <br> <i class="fas fa-quote-right"></i></li>
+
+                                    </ng-template>
                 
                 
-                        <li   class="display-quote"><i class="fas fa-quote-left"></i>   {{item.quote}}  <br> <i class="fas fa-quote-right"></i></li>
-                       
                     <app-quotedetails 
                          [parentData] = "item">
                 
@@ -26,7 +33,7 @@
             
                     
                 
-            
+
                     <div class="votes">
                         <div class="one">
                             <p>{{item.upCounter}}<i class="bi bi-hand-thumbs-up" (click)="upVote(i)"></i></p>
@@ -36,6 +43,7 @@
                             <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
                         </div>
                        </div>
+
                        <small> posted on {{item.datePosted|date :'short'}} <br> {{item.datePosted|dateCount :'short'}} days ago</small>
                                               
 

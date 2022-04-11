@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HighestUpvoteDirective } from 'src/app/highest-upvote.directive';
 import{Quotes} from '../../model/quotes' //import the quote class
 
 @Component({
@@ -17,18 +18,22 @@ export class QuoteComponent implements OnInit {
   
   
 
-  constructor() { }
 
   ngOnInit(): void {
     this.quotes =[
       new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ,new Date(2019,3,14)),
-      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0,new Date(2019,3,14))
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 9, 0,new Date(2019,3,14))
     ]
   }
 
 
+  constructor() { 
+    
+  }
+  // highest = Math.max(...this.arr)
 
-//upvote
+  
+//upvotef
  upVote(id){
  this.quotes[id].upCounter++
 
@@ -63,6 +68,14 @@ downVote(id){
  toggleShow(){
    this.toDisplay =!this.toDisplay
  }
+
+
+ 
+ arr:number[]=this.quotes.map(element=>{
+  return element.upCounter});
+
+highest:number = Math.max(...this.arr)
+
 
 
 
