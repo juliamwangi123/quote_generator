@@ -1,6 +1,6 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.Its a website that allow usders to post quotes , author, name of the user and shows the date when the quote got  posted 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.Its a website that allow usders to post quotes , author, name of the user and shows the date when the quote got  posted  and also allows the user to delete the quote
 
 ## Installation.
 1. Fork the the online repo
@@ -8,7 +8,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Open the direcory with  your preffered IDE
 4. Run the command ng-serve -open to run in the browser
 
+### Behavior Driven Development
 
+1. Create a quote
+2. Add the quote
+3. View  all the quotes reated
+4. Like  quote
+5. Dislike quote
+6. Delete quote
 
 
 ## Development server
