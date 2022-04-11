@@ -24,7 +24,7 @@ export class QuoteComponent implements OnInit {
   ngOnInit(): void {
     this.quotes =[
       new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ,new Date(2019,3,14)),
-      new Quotes("The Way I See it if You want rainbow you got to put up with the rain", "Dolly Paton", "Jabal Maina", 0, 0,new Date(2019,3,14))
+      new Quotes("The Way I See it if You want rainbow you got to put up with the rain", "Dolly Paton", "Paul kip", 0, 0,new Date(2019,3,14))
     ]
   }
 
