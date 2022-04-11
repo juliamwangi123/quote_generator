@@ -5,8 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation.
 1. Fork the the online repo
 2. Clone the repo
-3. Open the direcory with  your preffered IDE
-4. Run the command ng-serve -open to run in the browser
+3. Open the directory with  your preffered IDE
+4. Run the command ng-serve -open to run on the browser
 
 ### Behavior Driven Development
 
