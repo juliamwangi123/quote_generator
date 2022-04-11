@@ -17,21 +17,30 @@ export class QuoteComponent implements OnInit {
 
   
   
+  
 
+  
 
   ngOnInit(): void {
     this.quotes =[
       new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ,new Date(2019,3,14)),
-      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 9, 0,new Date(2019,3,14))
+      new Quotes("The Way I See it if You want rainbow you got to put up with the rain", "Dolly Paton", "Jabal Maina", 0, 0,new Date(2019,3,14))
     ]
   }
 
+  
 
+
+
+  
   constructor() { 
-    
+      
   }
-  // highest = Math.max(...this.arr)
-
+ 
+  arr:string[]=this.quotes.map(element=>{
+    return element.quote});
+  
+  highest:number = Math.max.apply(this.arr)
   
 //upvotef
  upVote(id){
@@ -43,6 +52,8 @@ export class QuoteComponent implements OnInit {
 downVote(id){
   this.quotes[id].downCounter--
 }
+
+
 
 
 
@@ -71,12 +82,7 @@ downVote(id){
 
 
  
- arr:number[]=this.quotes.map(element=>{
-  return element.upCounter});
-
-highest:number = Math.max(...this.arr)
-
-
+ 
 
 
 
