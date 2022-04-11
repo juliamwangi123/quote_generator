@@ -21,8 +21,8 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.quotes =[
-      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ,new Date(2022,3,14)),
-      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0,new Date(2022,3,14))
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina",0, 0 ,new Date(2019,3,14)),
+      new Quotes("Dont Be Afraid to Suck at Something New", "jules Mwangi", "Jabal Maina", 0, 0,new Date(2019,3,14))
     ]
   }
 

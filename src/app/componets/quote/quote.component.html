@@ -36,7 +36,7 @@
                             <button (click)="deleteQuote(i)"><i class="bi bi-trash"></i></button>
                         </div>
                        </div>
-                       {{item.datePosted}}
+                       <small> posted on {{item.datePosted|date :'short'}}  {{item.datePosted|dateCount :'short'}} days ago</small>
                                               
 
 
